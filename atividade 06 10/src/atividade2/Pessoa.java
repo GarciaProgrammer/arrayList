@@ -26,17 +26,15 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public void setCompromisso(Compromisso compromisso){
-        this.compromisso.add(compromisso);
+    public void setCompromisso(Compromisso maisCompromisso){
+        this.compromisso.add(maisCompromisso);
     }
-
-    public Compromisso getCompromisso(int index){
-        return compromisso.get(index);
+    
+    public Compromisso getCompromisso(int i){
+        return this.compromisso.get(i);
     }
     
     public ArrayList<Compromisso> getCompromissos(){
         return this.compromisso;
     }
-    
-    
 }

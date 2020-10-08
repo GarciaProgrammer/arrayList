@@ -12,6 +12,7 @@ public class Principal {
         Scanner teclado = new Scanner (System.in);
         Pessoa pessoa = new Pessoa ();
         
+
         System.out.println("Digite seu nome:");
         pessoa.setNome(teclado.nextLine());
         
@@ -23,14 +24,14 @@ public class Principal {
         
         for (int i = 0; i < qtd; i ++){
             Compromisso compromisso = new Compromisso();
-            
             System.out.println("Digite o titulo do compromisso:");
             compromisso.setTitulo(teclado.next());
             
             System.out.println("Digite o tipo do compromisso:");
             compromisso.setTipo(teclado.next());
             
-            System.out.println("Digite a data atual :");
+            System.out.println("Digite a data do compromisso::");
+            compromisso.setData(teclado.next());
             
             
             System.out.println("Digite o local do compromisso:");
@@ -48,5 +49,6 @@ public class Principal {
             System.out.println("*--------------------------------*");
         }
         
+        System.exit(0);
     }
 }

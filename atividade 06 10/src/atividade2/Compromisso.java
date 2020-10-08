@@ -9,7 +9,7 @@ public class Compromisso {
     
     private String titulo;
     private String tipo;
-    private Date data;
+    private String data;
     private String local;
     
     public void setTitulo(String titulo){
@@ -28,11 +28,11 @@ public class Compromisso {
         this.tipo = tipo;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
